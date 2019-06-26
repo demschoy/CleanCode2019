@@ -1,6 +1,7 @@
 package enumerations;
 
 public enum RoomType {
+	EMPTY("EMPTY"),
 	single("single"),
 	doubled("double"),
 	doubleDouble("double-double"),
