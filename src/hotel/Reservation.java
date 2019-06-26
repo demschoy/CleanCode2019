@@ -17,10 +17,6 @@ public class Reservation {
 		this.status = ReservationStatus.pending;
 	}
 
-	public void changeStatus(ReservationStatus newStatus) {
-		this.status = newStatus;
-	}
-	
 	public void changeArrivalDate(Date newDate) {
 		this.arrivalDate = newDate;
 	}
