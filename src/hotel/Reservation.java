@@ -10,7 +10,7 @@ public class Reservation {
 	RoomType type;
 	ReservationStatus status;
 	
-	Reservation(Date arrivalDate, Date departureDate, String roomType) {
+	public Reservation(Date arrivalDate, Date departureDate, String roomType) {
 		this.arrivalDate = arrivalDate;
 		this.departureDate = departureDate;		
 		this.type = RoomType.valueOf(roomType);
@@ -47,5 +47,14 @@ public class Reservation {
 	
 	public String getRoomType() {
 		return type.getType();
+	}
+	
+	public void cancel() {
+		status = ReservationStatus.canceled;
+		
+	}
+	
+	public void confirm() {
+		status = ReservationStatus.confirmed;
 	}
 }
